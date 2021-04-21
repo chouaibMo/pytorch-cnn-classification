@@ -1,0 +1,903 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "accelerator": "GPU",
+    "colab": {
+      "name": "projet.ipynb",
+      "provenance": [],
+      "collapsed_sections": []
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    },
+    "widgets": {
+      "application/vnd.jupyter.widget-state+json": {
+        "cd4b57ac253149abb62f9abf9fac1420": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HBoxModel",
+          "state": {
+            "_view_name": "HBoxView",
+            "_dom_classes": [],
+            "_model_name": "HBoxModel",
+            "_view_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_view_count": null,
+            "_view_module_version": "1.5.0",
+            "box_style": "",
+            "layout": "IPY_MODEL_a5cafd5aeb2443a3a660e153d1499b81",
+            "_model_module": "@jupyter-widgets/controls",
+            "children": [
+              "IPY_MODEL_af313913f6414b759cec9d2f7305b64a",
+              "IPY_MODEL_46e5630c083947dcb647d7c2847dc8ca"
+            ]
+          }
+        },
+        "a5cafd5aeb2443a3a660e153d1499b81": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "state": {
+            "_view_name": "LayoutView",
+            "grid_template_rows": null,
+            "right": null,
+            "justify_content": null,
+            "_view_module": "@jupyter-widgets/base",
+            "overflow": null,
+            "_model_module_version": "1.2.0",
+            "_view_count": null,
+            "flex_flow": null,
+            "width": null,
+            "min_width": null,
+            "border": null,
+            "align_items": null,
+            "bottom": null,
+            "_model_module": "@jupyter-widgets/base",
+            "top": null,
+            "grid_column": null,
+            "overflow_y": null,
+            "overflow_x": null,
+            "grid_auto_flow": null,
+            "grid_area": null,
+            "grid_template_columns": null,
+            "flex": null,
+            "_model_name": "LayoutModel",
+            "justify_items": null,
+            "grid_row": null,
+            "max_height": null,
+            "align_content": null,
+            "visibility": null,
+            "align_self": null,
+            "height": null,
+            "min_height": null,
+            "padding": null,
+            "grid_auto_rows": null,
+            "grid_gap": null,
+            "max_width": null,
+            "order": null,
+            "_view_module_version": "1.2.0",
+            "grid_template_areas": null,
+            "object_position": null,
+            "object_fit": null,
+            "grid_auto_columns": null,
+            "margin": null,
+            "display": null,
+            "left": null
+          }
+        },
+        "af313913f6414b759cec9d2f7305b64a": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "FloatProgressModel",
+          "state": {
+            "_view_name": "ProgressView",
+            "style": "IPY_MODEL_49b9810aa0834b82a3ea61bb36926e74",
+            "_dom_classes": [],
+            "description": "",
+            "_model_name": "FloatProgressModel",
+            "bar_style": "success",
+            "max": 170498071,
+            "_view_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "value": 170498071,
+            "_view_count": null,
+            "_view_module_version": "1.5.0",
+            "orientation": "horizontal",
+            "min": 0,
+            "description_tooltip": null,
+            "_model_module": "@jupyter-widgets/controls",
+            "layout": "IPY_MODEL_8cd61f1d7f34494586a4cf8a1c089b03"
+          }
+        },
+        "46e5630c083947dcb647d7c2847dc8ca": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HTMLModel",
+          "state": {
+            "_view_name": "HTMLView",
+            "style": "IPY_MODEL_361a43e20b904946b2f528d138057a72",
+            "_dom_classes": [],
+            "description": "",
+            "_model_name": "HTMLModel",
+            "placeholder": "​",
+            "_view_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "value": " 170499072/? [00:40&lt;00:00, 4250398.60it/s]",
+            "_view_count": null,
+            "_view_module_version": "1.5.0",
+            "description_tooltip": null,
+            "_model_module": "@jupyter-widgets/controls",
+            "layout": "IPY_MODEL_047ad47c9c5d40c49b9c8ef65ebcd5ff"
+          }
+        },
+        "49b9810aa0834b82a3ea61bb36926e74": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "ProgressStyleModel",
+          "state": {
+            "_view_name": "StyleView",
+            "_model_name": "ProgressStyleModel",
+            "description_width": "initial",
+            "_view_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.5.0",
+            "_view_count": null,
+            "_view_module_version": "1.2.0",
+            "bar_color": null,
+            "_model_module": "@jupyter-widgets/controls"
+          }
+        },
+        "8cd61f1d7f34494586a4cf8a1c089b03": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "state": {
+            "_view_name": "LayoutView",
+            "grid_template_rows": null,
+            "right": null,
+            "justify_content": null,
+            "_view_module": "@jupyter-widgets/base",
+            "overflow": null,
+            "_model_module_version": "1.2.0",
+            "_view_count": null,
+            "flex_flow": null,
+            "width": null,
+            "min_width": null,
+            "border": null,
+            "align_items": null,
+            "bottom": null,
+            "_model_module": "@jupyter-widgets/base",
+            "top": null,
+            "grid_column": null,
+            "overflow_y": null,
+            "overflow_x": null,
+            "grid_auto_flow": null,
+            "grid_area": null,
+            "grid_template_columns": null,
+            "flex": null,
+            "_model_name": "LayoutModel",
+            "justify_items": null,
+            "grid_row": null,
+            "max_height": null,
+            "align_content": null,
+            "visibility": null,
+            "align_self": null,
+            "height": null,
+            "min_height": null,
+            "padding": null,
+            "grid_auto_rows": null,
+            "grid_gap": null,
+            "max_width": null,
+            "order": null,
+            "_view_module_version": "1.2.0",
+            "grid_template_areas": null,
+            "object_position": null,
+            "object_fit": null,
+            "grid_auto_columns": null,
+            "margin": null,
+            "display": null,
+            "left": null
+          }
+        },
+        "361a43e20b904946b2f528d138057a72": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "state": {
+            "_view_name": "StyleView",
+            "_model_name": "DescriptionStyleModel",
+            "description_width": "",
+            "_view_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.5.0",
+            "_view_count": null,
+            "_view_module_version": "1.2.0",
+            "_model_module": "@jupyter-widgets/controls"
+          }
+        },
+        "047ad47c9c5d40c49b9c8ef65ebcd5ff": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "state": {
+            "_view_name": "LayoutView",
+            "grid_template_rows": null,
+            "right": null,
+            "justify_content": null,
+            "_view_module": "@jupyter-widgets/base",
+            "overflow": null,
+            "_model_module_version": "1.2.0",
+            "_view_count": null,
+            "flex_flow": null,
+            "width": null,
+            "min_width": null,
+            "border": null,
+            "align_items": null,
+            "bottom": null,
+            "_model_module": "@jupyter-widgets/base",
+            "top": null,
+            "grid_column": null,
+            "overflow_y": null,
+            "overflow_x": null,
+            "grid_auto_flow": null,
+            "grid_area": null,
+            "grid_template_columns": null,
+            "flex": null,
+            "_model_name": "LayoutModel",
+            "justify_items": null,
+            "grid_row": null,
+            "max_height": null,
+            "align_content": null,
+            "visibility": null,
+            "align_self": null,
+            "height": null,
+            "min_height": null,
+            "padding": null,
+            "grid_auto_rows": null,
+            "grid_gap": null,
+            "max_width": null,
+            "order": null,
+            "_view_module_version": "1.2.0",
+            "grid_template_areas": null,
+            "object_position": null,
+            "object_fit": null,
+            "grid_auto_columns": null,
+            "margin": null,
+            "display": null,
+            "left": null
+          }
+        }
+      }
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "uBYQZ7Yqaxrn"
+      },
+      "source": [
+        "pip install ptflops \\\n",
+        "pip install pthflops \\\n",
+        "pip install torchsummaryX "
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "hzJiyjd7kOsB"
+      },
+      "source": [
+        "import time\n",
+        "import torch\n",
+        "import numpy as np\n",
+        "import torch.nn as nn\n",
+        "import torch.nn.functional as F\n",
+        "import torch.optim as optim\n",
+        "import torchvision\n",
+        "import torchvision.transforms as transforms\n",
+        "\n",
+        "import matplotlib.pyplot as plt\n",
+        "from torchsummaryX import summary\n",
+        "from prettytable import PrettyTable\n",
+        "from ptflops import get_model_complexity_info\n"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "DS50bibJBjl_"
+      },
+      "source": [
+        "## Variables globales"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "LAm69SUu_Oi5"
+      },
+      "source": [
+        "# Taille des batchs\n",
+        "size_batch = 16\n",
+        "nb_epoch = 120"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Mnb42dgD7-WP"
+      },
+      "source": [
+        "### Affichage des informations du GPU alloué"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "2IiCa8TWlDQX",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "eb06bb81-c5c7-4363-cad3-92c2c7e11eb1"
+      },
+      "source": [
+        "device = torch.device(\"cuda:0\" if torch.cuda.is_available() else \"cpu\")\n",
+        "!nvidia-smi"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Sun Apr 18 09:43:25 2021       \n",
+            "+-----------------------------------------------------------------------------+\n",
+            "| NVIDIA-SMI 460.67       Driver Version: 460.32.03    CUDA Version: 11.2     |\n",
+            "|-------------------------------+----------------------+----------------------+\n",
+            "| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |\n",
+            "| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |\n",
+            "|                               |                      |               MIG M. |\n",
+            "|===============================+======================+======================|\n",
+            "|   0  Tesla T4            Off  | 00000000:00:04.0 Off |                    0 |\n",
+            "| N/A   47C    P8    11W /  70W |      3MiB / 15109MiB |      0%      Default |\n",
+            "|                               |                      |                  N/A |\n",
+            "+-------------------------------+----------------------+----------------------+\n",
+            "                                                                               \n",
+            "+-----------------------------------------------------------------------------+\n",
+            "| Processes:                                                                  |\n",
+            "|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |\n",
+            "|        ID   ID                                                   Usage      |\n",
+            "|=============================================================================|\n",
+            "|  No running processes found                                                 |\n",
+            "+-----------------------------------------------------------------------------+\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "11FVfwCOchFA"
+      },
+      "source": [
+        "### Fonction qui calcule et détaille le nombre de paramètres (poids + biais) du modèle en fonction de ses couches"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "JdUKLmc2lOPG"
+      },
+      "source": [
+        "def count_parameters(model):\n",
+        "    print('\\n')\n",
+        "    table = PrettyTable([\"Modules\", \"Parameters\"])\n",
+        "    total_params = 0\n",
+        "    for name, parameter in model.named_parameters():\n",
+        "        if not parameter.requires_grad: continue\n",
+        "        param = parameter.numel()\n",
+        "        table.add_row([name, param])\n",
+        "        total_params+=param\n",
+        "\n",
+        "    table.add_row(['------------','------------'])\n",
+        "    table.add_row(['TOTAL',total_params])\n",
+        "    print(table) \n",
+        "    print('\\n')"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "BZCpRGoYc14f"
+      },
+      "source": [
+        "### Création des ensembles d'entrainements et de tests :\n",
+        "  - Taille des batchs : voir la variable globale \"size_batch\"\n",
+        "  - Augmentation des données (Horizontal flip + Crop) uniquement pour le train set"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 117,
+          "referenced_widgets": [
+            "cd4b57ac253149abb62f9abf9fac1420",
+            "a5cafd5aeb2443a3a660e153d1499b81",
+            "af313913f6414b759cec9d2f7305b64a",
+            "46e5630c083947dcb647d7c2847dc8ca",
+            "49b9810aa0834b82a3ea61bb36926e74",
+            "8cd61f1d7f34494586a4cf8a1c089b03",
+            "361a43e20b904946b2f528d138057a72",
+            "047ad47c9c5d40c49b9c8ef65ebcd5ff"
+          ]
+        },
+        "id": "ybA_GmBmlrqA",
+        "outputId": "a85e07f1-6a93-427c-f858-fe14557bd709"
+      },
+      "source": [
+        "# Data augmentation \n",
+        "# Only for training set\n",
+        "transform_train = transforms.Compose([ transforms.RandomHorizontalFlip(),\n",
+        "                                       transforms.RandomCrop(32, padding=4),\n",
+        "                                       transforms.ToTensor(),\n",
+        "                                       transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])\n",
+        "\n",
+        "transform = transforms.Compose( [transforms.ToTensor(), \n",
+        "                                 transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])\n",
+        "\n",
+        "#Training set\n",
+        "trainset = torchvision.datasets.CIFAR10(root='./data', train=True, download=True, transform=transform_train)\n",
+        "trainloader = torch.utils.data.DataLoader(trainset, batch_size=size_batch , shuffle=True, num_workers=2)\n",
+        "\n",
+        "#Testing set\n",
+        "testset = torchvision.datasets.CIFAR10(root='./data', train=False, download=True, transform=transform)\n",
+        "testloader = torch.utils.data.DataLoader(testset, batch_size=size_batch, shuffle=False, num_workers=2)\n",
+        "\n",
+        "classes = ('plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck')\n",
+        "\n",
+        "\n",
+        "# functions to show an image\n",
+        "def imshow(img):\n",
+        "    img = img / 2 + 0.5\n",
+        "    npimg = img.numpy()\n",
+        "    plt.imshow(np.transpose(npimg, (1, 2, 0)))\n",
+        "    plt.show()\n",
+        "\n",
+        "\n",
+        "# get some random training images\n",
+        "dataiter = iter(trainloader)\n",
+        "images, labels = dataiter.next()"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Downloading https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz to ./data/cifar-10-python.tar.gz\n"
+          ],
+          "name": "stdout"
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "application/vnd.jupyter.widget-view+json": {
+              "model_id": "cd4b57ac253149abb62f9abf9fac1420",
+              "version_minor": 0,
+              "version_major": 2
+            },
+            "text/plain": [
+              "HBox(children=(FloatProgress(value=0.0, max=170498071.0), HTML(value='')))"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          }
+        },
+        {
+          "output_type": "stream",
+          "text": [
+            "\n",
+            "Extracting ./data/cifar-10-python.tar.gz to ./data\n",
+            "Files already downloaded and verified\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "NJIfJa5MdXXg"
+      },
+      "source": [
+        "### Création du modèle CNN, calcul de ses paramètres, et details de ses couches :\n",
+        "  - 3 blocs avec 2 couches de convolution pour chaque bloc (stride et padding à 1).\n",
+        "  - Max pooling (2,2) après chaque bloc.\n",
+        "  - 3 couches linéaires (fully connected layers).\n",
+        "  - Dropout avant chaque couche fully connected (5% - 25%). "
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "vh-_COCGlr2G"
+      },
+      "source": [
+        "# CNN class\n",
+        "class Net(nn.Module):\n",
+        "    def __init__(self):\n",
+        "        super(Net, self).__init__()\n",
+        "        #Convolution layer\n",
+        "        self.conv1 = nn.Conv2d(3, 24,  kernel_size=3, stride=1, padding=1)\n",
+        "        self.conv2 = nn.Conv2d(24, 24, kernel_size=3, stride=1, padding=1) \n",
+        "        #---------------------------------------------------------------\n",
+        "        self.conv3 = nn.Conv2d(24, 32, kernel_size=3, stride=1, padding=1)      \n",
+        "        self.conv4 = nn.Conv2d(32, 32, kernel_size=3, stride=1, padding=1)\n",
+        "        #---------------------------------------------------------------\n",
+        "        self.conv5 = nn.Conv2d(32, 48, kernel_size=3, stride=1, padding=1)\n",
+        "        self.conv6 = nn.Conv2d(48, 48, kernel_size=3, stride=1, padding=1)\n",
+        "\n",
+        "        #fully connected layer\n",
+        "        self.fc1 = nn.Linear(in_features=4*4*48, out_features=220)\n",
+        "        self.fc2 = nn.Linear(in_features=220, out_features=120) \n",
+        "        self.fc3 = nn.Linear(in_features=120, out_features=10)\n",
+        "\n",
+        "        #pooling\n",
+        "        self.pool = nn.MaxPool2d(2, 2)\n",
+        "\n",
+        "        #Drop out\n",
+        "        self.dropout5 = nn.Dropout(0.05)\n",
+        "        self.dropout25 = nn.Dropout(0.25)\n",
+        "\n",
+        "    def forward(self, x):\n",
+        "        x = F.relu(self.conv1(x))\n",
+        "        x = self.pool(F.relu(self.conv2(x)))\n",
+        "\n",
+        "        x = F.relu(self.conv3(x))\n",
+        "        x = self.pool(F.relu(self.conv4(x)))\n",
+        "\n",
+        "        x = F.relu(self.conv5(x))\n",
+        "        x = self.pool(F.relu(self.conv6(x)))\n",
+        "\n",
+        "        x = x.view(-1, 4*4*48)\n",
+        "        x = self.dropout5(x)\n",
+        "        x = F.relu(self.fc1(x))\n",
+        "        x = self.dropout25(x)\n",
+        "        x = F.relu(self.fc2(x))\n",
+        "        x = self.dropout25(x)\n",
+        "        x = F.log_softmax(self.fc3(x),dim = 1)\n",
+        "        return x\n",
+        "\n",
+        "net = Net().to(device)\n",
+        "\n",
+        "## Loss function\n",
+        "criterion = nn.CrossEntropyLoss()\n",
+        "optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "fb3rZjsvBE5L"
+      },
+      "source": [
+        "## Description et statistiques du modèle: \n",
+        "  - Affichage des différentes couches du modèle\n",
+        "  - Affichage du nombre de paramètres de chaque couche en détails (weights/biais)\n",
+        "  - Affichage du nombre de MACs de chaque couche (multiply-accumulate operations)\n",
+        "  - Affichage du nombre total de MACs/FLOPs"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3S9O0Lspo88s",
+        "outputId": "234e2e5d-a121-4f94-89ca-8188628b99f2"
+      },
+      "source": [
+        "count_parameters(net)\n",
+        "get_model_complexity_info(net, (3, 32, 32), as_strings=True, print_per_layer_stat=True, verbose=True)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "\n",
+            "\n",
+            "+--------------+--------------+\n",
+            "|   Modules    |  Parameters  |\n",
+            "+--------------+--------------+\n",
+            "| conv1.weight |     648      |\n",
+            "|  conv1.bias  |      24      |\n",
+            "| conv2.weight |     5184     |\n",
+            "|  conv2.bias  |      24      |\n",
+            "| conv3.weight |     6912     |\n",
+            "|  conv3.bias  |      32      |\n",
+            "| conv4.weight |     9216     |\n",
+            "|  conv4.bias  |      32      |\n",
+            "| conv5.weight |    13824     |\n",
+            "|  conv5.bias  |      48      |\n",
+            "| conv6.weight |    20736     |\n",
+            "|  conv6.bias  |      48      |\n",
+            "|  fc1.weight  |    168960    |\n",
+            "|   fc1.bias   |     220      |\n",
+            "|  fc2.weight  |    26400     |\n",
+            "|   fc2.bias   |     120      |\n",
+            "|  fc3.weight  |     1200     |\n",
+            "|   fc3.bias   |      10      |\n",
+            "| ------------ | ------------ |\n",
+            "|    TOTAL     |    253638    |\n",
+            "+--------------+--------------+\n",
+            "\n",
+            "\n",
+            "Warning: module Dropout is treated as a zero-op.\n",
+            "Warning: module Net is treated as a zero-op.\n",
+            "Net(\n",
+            "  0.254 M, 100.000% Params, 0.013 GMac, 100.000% MACs, \n",
+            "  (conv1): Conv2d(0.001 M, 0.265% Params, 0.001 GMac, 5.454% MACs, 3, 24, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n",
+            "  (conv2): Conv2d(0.005 M, 2.053% Params, 0.005 GMac, 42.268% MACs, 24, 24, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n",
+            "  (conv3): Conv2d(0.007 M, 2.738% Params, 0.002 GMac, 14.089% MACs, 24, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n",
+            "  (conv4): Conv2d(0.009 M, 3.646% Params, 0.002 GMac, 18.764% MACs, 32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n",
+            "  (conv5): Conv2d(0.014 M, 5.469% Params, 0.001 GMac, 7.037% MACs, 32, 48, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n",
+            "  (conv6): Conv2d(0.021 M, 8.194% Params, 0.001 GMac, 10.543% MACs, 48, 48, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n",
+            "  (fc1): Linear(0.169 M, 66.701% Params, 0.0 GMac, 1.341% MACs, in_features=768, out_features=220, bias=True)\n",
+            "  (fc2): Linear(0.027 M, 10.456% Params, 0.0 GMac, 0.210% MACs, in_features=220, out_features=120, bias=True)\n",
+            "  (fc3): Linear(0.001 M, 0.477% Params, 0.0 GMac, 0.010% MACs, in_features=120, out_features=10, bias=True)\n",
+            "  (pool): MaxPool2d(0.0 M, 0.000% Params, 0.0 GMac, 0.284% MACs, kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)\n",
+            "  (dropout5): Dropout(0.0 M, 0.000% Params, 0.0 GMac, 0.000% MACs, p=0.05, inplace=False)\n",
+            "  (dropout25): Dropout(0.0 M, 0.000% Params, 0.0 GMac, 0.000% MACs, p=0.25, inplace=False)\n",
+            ")\n"
+          ],
+          "name": "stdout"
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "('0.01 GMac', '253.64 k')"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 8
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jTBg7t9n6Xf7",
+        "outputId": "f1bc6e93-c285-46a2-cd41-2f061544a8d0"
+      },
+      "source": [
+        "summary(net, torch.randn(1, 3, 32, 32).to(device)) \n",
+        "print('\\n')"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "==================================================================\n",
+            "                Kernel Shape     Output Shape   Params  Mult-Adds\n",
+            "Layer                                                            \n",
+            "0_conv1        [3, 24, 3, 3]  [1, 24, 32, 32]    672.0   663.552k\n",
+            "1_conv2       [24, 24, 3, 3]  [1, 24, 32, 32]   5.208k  5.308416M\n",
+            "2_pool                     -  [1, 24, 16, 16]        -          -\n",
+            "3_conv3       [24, 32, 3, 3]  [1, 32, 16, 16]   6.944k  1.769472M\n",
+            "4_conv4       [32, 32, 3, 3]  [1, 32, 16, 16]   9.248k  2.359296M\n",
+            "5_pool                     -    [1, 32, 8, 8]        -          -\n",
+            "6_conv5       [32, 48, 3, 3]    [1, 48, 8, 8]  13.872k   884.736k\n",
+            "7_conv6       [48, 48, 3, 3]    [1, 48, 8, 8]  20.784k  1.327104M\n",
+            "8_pool                     -    [1, 48, 4, 4]        -          -\n",
+            "9_dropout5                 -         [1, 768]        -          -\n",
+            "10_fc1            [768, 220]         [1, 220]  169.18k    168.96k\n",
+            "11_dropout25               -         [1, 220]        -          -\n",
+            "12_fc2            [220, 120]         [1, 120]   26.52k      26.4k\n",
+            "13_dropout25               -         [1, 120]        -          -\n",
+            "14_fc3             [120, 10]          [1, 10]    1.21k       1.2k\n",
+            "------------------------------------------------------------------\n",
+            "                          Totals\n",
+            "Total params            253.638k\n",
+            "Trainable params        253.638k\n",
+            "Non-trainable params         0.0\n",
+            "Mult-Adds             12.509136M\n",
+            "==================================================================\n",
+            "\n",
+            "\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "MXHWbfYWfANx"
+      },
+      "source": [
+        "## Fonction d'évalution du modèle (lancée après chaque époque d'entrainement) :\n",
+        "  - Evaluation du modèle\n",
+        "  - Affichage de la précision après l'époque\n",
+        "  - Affichage du loss après l'epoque\n",
+        "  - Affichage de la durée de l'epoque\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "dUF4M_UgS6b9"
+      },
+      "source": [
+        "def evaluation(epoch=-1):\n",
+        "  correct = 0\n",
+        "  total = 0\n",
+        "  with torch.no_grad():\n",
+        "      for data in testloader:\n",
+        "          images, labels = data\n",
+        "          images = images.to(device)\n",
+        "          labels = labels.to(device)\n",
+        "\n",
+        "          outputs = net(images)\n",
+        "          _, predicted = torch.max(outputs.data, 1)\n",
+        "          total += labels.size(0)\n",
+        "          correct += (predicted == labels).sum().item()\n",
+        "\n",
+        "  if epoch < 0:\n",
+        "    print('[ INIT. ]  accuracy : %d%% ' % ((100 * correct / total)))\n",
+        "\n",
+        "  return 100 * correct / total"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "d8qzW3_TPTIx"
+      },
+      "source": [
+        "\n",
+        "## Fonction qui permet de calculer la précision du réseau pour chaque classe d'images\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "JsE4og3ZPTZG"
+      },
+      "source": [
+        "def class_accuracy():\n",
+        "  class_correct = list(0. for i in range(10))\n",
+        "  class_total = list(0. for i in range(10))\n",
+        "  with torch.no_grad():\n",
+        "      for data in testloader:\n",
+        "          images, labels = data\n",
+        "          images = images.to(device)\n",
+        "          labels = labels.to(device)\n",
+        "          outputs = net(images)\n",
+        "          _, predicted = torch.max(outputs, 1)\n",
+        "          c = (predicted == labels).squeeze()\n",
+        "          for i in range(4):\n",
+        "              label = labels[i]\n",
+        "              class_correct[label] += c[i].item()\n",
+        "              class_total[label] += 1\n",
+        "\n",
+        "\n",
+        "  for i in range(10):\n",
+        "      print('Accuracy of %5s : %2d %%' % (\n",
+        "          classes[i], 100 * class_correct[i] / class_total[i]))"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "S5-PhEAmfNgQ"
+      },
+      "source": [
+        "## Entrainement du modèle\n",
+        "  - Evalution après chaque époque.\n",
+        "  - Affichage de la précision (train & test) + loss à chaque époque\n",
+        "  - Calcule du temps d'execution de chaque époque + temps total t'entrainement \n",
+        "  - Renvoie les valeurs precisions (train/test) et de loss sous forme de vecteurs."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ruhWscPMlr5o"
+      },
+      "source": [
+        "\n",
+        "def train(nb_epoch):\n",
+        "  train_accuracies = []\n",
+        "  test_accuracies = []\n",
+        "  losses = []\n",
+        "  print(\"start training ...\\n\")\n",
+        "  evaluation()                                              # First Evaluation (before training)  \n",
+        "  s_time = time.time()\n",
+        "  for epoch in range(nb_epoch):\n",
+        "      start = time.time()\n",
+        "      running_loss = 0.0\n",
+        "      correct = 0\n",
+        "      for i, data in enumerate(trainloader, 0):\n",
+        "\n",
+        "          inputs, labels = data                           \n",
+        "          inputs = inputs.to(device)                     \n",
+        "          labels = labels.to(device)             \n",
+        "\n",
+        "          optimizer.zero_grad()\n",
+        "\n",
+        "          outputs = net(inputs)                     \n",
+        "          loss = criterion(outputs, labels)           \n",
+        "          loss.backward()                              \n",
+        "          optimizer.step()                       \n",
+        "\n",
+        "          running_loss += loss.item()            \n",
+        "\n",
+        "          _, predicted = torch.max(outputs.data, 1)\n",
+        "          correct += (predicted == labels).sum().item()    \n",
+        "\n",
+        "\n",
+        "      test_acc = evaluation(epoch+1)                        # Test accuracy\n",
+        "      train_acc = 100 * correct / len(trainset)             # Train accuracy\n",
+        "\n",
+        "      print('[epoch %d] train accuracy: %.0f%%  test accuracy: %.0f%%  loss: %.3f  duration: %.2f ' % ( epoch+1, \n",
+        "                                                                                                        train_acc, test_acc, \n",
+        "                                                                                                        running_loss / len(trainloader), \n",
+        "                                                                                                        time.time() - start ) )\n",
+        "\n",
+        "      # storing accuracies and loss\n",
+        "      test_accuracies.append(test_acc)\n",
+        "      train_accuracies.append(train_acc)\n",
+        "      losses.append(running_loss / len(trainloader))\n",
+        "\n",
+        "  print('\\nTraining finished in', time.strftime('%Hh %Mmin %Ssec', time.gmtime(time.time() - s_time )) )\n",
+        "  return (train_accuracies, test_accuracies, losses)"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "XH_faLIyfLps"
+      },
+      "source": [
+        "train_acc, test_acc, losses = train(nb_epoch) "
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "9eaWjVDBJlGr"
+      },
+      "source": [
+        "evaluation()\n",
+        "print('\\n')\n",
+        "class_accuracy()"
+      ],
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
